@@ -4,11 +4,6 @@ pipeline {
         CI = 'true'
     }
     stages {
-        stage('Build') {
-            steps {
-                sh 'apt update'
-            }
-        }
      stage('Deliver for development') {
             when {
                 branch 'master' 
